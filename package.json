@@ -1,0 +1,19 @@
+{
+  "name": "naive-loader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "tbuild": "webpack --progress --config test/webpack.test.js"
+  },
+  "keywords": [],
+  "author": "wu.zijie.software@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "de-indent": "^1.0.2",
+    "indent-string": "^3.0.0",
+    "loader-utils": "^0.2.16",
+    "parse5": "^3.0.1"
+  }
+}
