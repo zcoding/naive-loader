@@ -1,0 +1,29 @@
+
+<div class="hello" :shit="'ha'" :style="{background: state.bgcolor}" :data-dd="state.dataId" data-id="state.dataId">
+  <div class="loading" n-show="state.loadingData">{{ state.status }}</div>
+  <input type="text" n-model="state.counter">
+  <div class="world" n-show="!state.loadingData && state.show">
+    <ul class="list">
+      <li class="item" n-each="item in state.list">
+        <a href="javascript:;" :class="{'success': state.success}">{{ $index }} : {{ item.name }}</a>
+      </li>
+    </ul>
+  </div>
+  <div n-if="state.abc">abcabcabc</div>
+  <div n-else>not abc</div>
+  <div class="message-list" n-each="item in state.messageList">
+    <div class="message-item">{{{ item.content }}}</div>
+  </div>
+  <side-bar :props="1"></side-bar>
+  <side-bar :props="2"></side-bar>
+  <div class="action">
+    <button class="btn" type="button" @click="this.handleSubmit" :disabled="!state.canSubmit">submit</button>
+  </div>
+  <svg version="1.1" class="submittick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 405.8 27 27" xml:space="preserve" width="32" height="32">
+    <g>
+      <line class="st0 stline1" x1="-238.8" y1="416.7" x2="-231.8" y2="424.7"/>
+      <line class="st0 stline2" x1="-231.8" y1="424.7" x2="-219.2" y2="409.4"/>
+      <path class="st0 stpath" d="M-220.3,415.9c0.3,1.1,0.5,2.3,0.5,3.5c0,6.6-5.4,12-12,12c-6.6,0-12-5.4-12-12s5.4-12,12-12 c2.6,0,5,0.8,6.9,2.2"/>
+    </g>
+  </svg>
+</div>
