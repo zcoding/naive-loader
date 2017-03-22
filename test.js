@@ -2,7 +2,10 @@ const fs = require('fs');
 const parse5 = require('parse5');
 const vdomTemplate = require('./lib/vdom-template');
 
-fs.readFile('./test/app.naive', 'utf8', function (err, data) {
+// const testFile = './test/app.naive';
+const testFile = './test/test-event.naive';
+
+fs.readFile(testFile, 'utf8', function (err, data) {
   if (err) {
     console.error(err);
   }

@@ -1,0 +1,3 @@
+<ul>
+  <li n-each="item in list" @click="handleClick(item, $event)">{{ item }}</li>
+</ul>
