@@ -1,8 +1,8 @@
 function render(h, _) {
   var $vm = this;
   var $state = $vm.state;
-  var _uid = "acc7b4f9-1434-4dd1-8623-98b8381c4360";
-  return h("div", {"class":"hello",":shit":'ha',":style":{background:$state.bgcolor},":dataDd":$state.dataId,"data-id":"dataId"}, [
+  var _uid = "c7fc18c5-698b-416c-91d6-0814fc323b9a";
+  return h("div", {"class":"hello",":shit":'ha',":style":{transform:'translate3d(1px 2px 3px)'},":dataDd":$state.dataId,"data-id":"dataId"}, [
     " ",
     h("div", {"class":"loading","n-show":"loadingData"}, [
       $state.status

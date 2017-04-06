@@ -1,5 +1,4 @@
-
-<div class="hello" :shit="'ha'" :style="{background: bgcolor}" :data-dd="dataId" data-id="dataId">
+<div class="hello" :shit="'ha'" :style="{transform: 'translate3d(1px,2px,3px)'}" :data-dd="dataId" data-id="dataId">
   <div class="loading" n-show="loadingData">{{ status }}</div>
   <input type="text" n-model="counter">
   <div class="world" n-show="!loadingData && show">
