@@ -3,8 +3,8 @@
   <input type="text" n-model="counter">
   <div class="world" n-show="!loadingData && show">
     <ul class="list">
-      <li class="item" n-each="item in list">
-        <a href="javascript:;" :class="{'success': success}">{{ $index }} : {{ item.name }}</a>
+      <li class="item" n-each="(item, key, idx) in list">
+        <a href="javascript:;" :class="{'success': success}">{{ idx }} : {{ item.name }}</a>
       </li>
     </ul>
   </div>
