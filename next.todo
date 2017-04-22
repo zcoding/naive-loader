@@ -1,0 +1,5 @@
+n-bind:
+ ☐ :class 转换成 staticClass
+
+n-on:
+ ☐ 区分 n-bind

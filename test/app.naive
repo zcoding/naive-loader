@@ -3,7 +3,7 @@
   <input type="text" n-model="counter">
   <div class="world" n-show="!loadingData && show">
     <ul class="list">
-      <li class="item" n-each="(item, key, idx) in list">
+      <li class="item" n-each="(item, key, idx) in list" :key="item.id">
         <a href="javascript:;" :class="{'success': success}">{{ idx }} : {{ item.name }}</a>
       </li>
     </ul>

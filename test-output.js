@@ -1,7 +1,7 @@
 function render(h, _) {
   var $vm = this;
   var $state = $vm.state;
-  var _uid = "302bba9d-6299-4567-bc21-0f4b5ea324ac";
+  var _uid = "c091d582-2e50-4cd0-96ea-e6b0594726c4";
   return h("div", {"class":"hello",":shit":'ha',":style":{ transform: 'translate3d(1px,2px,3px)' },":dataDd":$state.dataId,"data-id":"dataId"}, [
     " ",
     h("div", {"class":"loading","n-show":"loadingData"}, [
@@ -14,7 +14,7 @@ function render(h, _) {
       " ",
       h("ul", {"class":"list"}, [
         " ",
-        _.each($state.list, 2, function(item, key, idx, $item_uid) { return {key: _uid + "-7" + "-" + $item_uid, tagName: "li", attrs: {"class":"item"}, children: [
+        _.each($state.list, 3, function(item, key, idx, $item_uid) { return {key: _uid + "-7" + "-" + (item.id || $item_uid), tagName: "li", attrs: {"class":"item",":key":item.id}, children: [
           " ",
           h("a", {"href":"javascript:;",":class":{ 'success': $state.success }}, [
             idx,
@@ -36,7 +36,7 @@ function render(h, _) {
       "not abc"
     ]}),
     " ",
-    _.each($state.messageList, 0, function(item, $item_uid) { return {key: _uid + "-11" + "-" + $item_uid, tagName: "div", attrs: {"class":"message-list"}, children: [
+    _.each($state.messageList, 1, function(item, $item_uid) { return {key: _uid + "-11" + "-" + $item_uid, tagName: "div", attrs: {"class":"message-list"}, children: [
       " ",
       h("div", {"class":"message-item"}, [
         item.content
