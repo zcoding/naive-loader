@@ -3,3 +3,7 @@ n-bind:
 
 n-on:
  ☐ 区分 n-bind
+
+n-if:
+ ☐ 改为 ?: 语句
+ ☐ n-else-if

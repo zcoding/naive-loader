@@ -8,8 +8,8 @@
       </li>
     </ul>
   </div>
-  <div n-if="abc">abcabcabc</div>
-  <div n-else>not abc</div>
+  <div n-if="abc">this is n-if</div>
+  <div n-else>this is n-else</div>
   <div class="message-list" n-each="item in messageList">
     <div class="message-item">{{{ item.content }}}</div>
   </div>
